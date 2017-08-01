@@ -1,0 +1,17 @@
+{
+  "name": "react-mchart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "moyuyc",
+  "license": "MIT",
+  "dependencies": {
+    "classname": "0.0.0",
+    "lodash": "^4.17.4",
+    "react-mhoc": "^1.0.0"
+  }
+}

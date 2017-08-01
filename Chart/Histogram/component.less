@@ -1,0 +1,107 @@
+
+.chart-tile-histogram {
+  @height-x-axis: 25px;
+
+  .main {
+    text-align: center;
+    height: ~'calc(100% -' @height-x-axis~')';
+    //position: relative;
+    //bottom: 20px;
+    border-bottom: 1px solid rgb(242, 242, 242);
+
+    .rectangle-container {
+      display: inline-block;
+      height: 100%;
+      vertical-align: bottom;
+
+      //min-width: 30px;
+      margin: auto 10px;
+      position: relative;
+
+      .x-axis {
+        text-align: center;
+        display: block;
+        position: absolute;
+        left: -100px;
+        right: -100px;
+        bottom: -@height-x-axis;
+      }
+
+
+      .rectangle {
+        height: 0;
+        transition: height .5s ease;
+
+        .rectangle-text {
+          position: absolute;
+          text-align: center;
+          top: -21px;
+          left: -100px;
+          right: -100px;
+          display: block;
+        }
+
+        .tile-container {
+          height: 100%;
+          position: relative;
+        }
+
+        .rectangle-tile {
+          //border: 1px solid cadetblue;
+        }
+
+        position: absolute;
+        bottom: 0;
+
+        width: 100%;
+        vertical-align: bottom;
+      }
+    }
+
+  }
+
+}
+
+.chart-popover {
+  pointer-events: none;
+  padding: 12px 15px;
+  color: #fff;
+  position: absolute;
+  z-index: 10;
+
+  background-color: rgba(0, 0, 0, .7);
+  border-radius: 4px;
+
+  .chart-popover-item {
+    display: block;
+    margin-bottom: 10px;
+    min-width: 100px;
+    text-align: left;
+    line-height: 15px;
+
+    .chart-popover-color {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      vertical-align: middle;
+    }
+    .chart-popover-label {
+      display: inline-block;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+    .chart-popover-value {
+      display: inline-block;
+      vertical-align: middle;
+      float: right;
+    }
+    &:after {
+      display: table;
+      content: " ";
+      clear: both;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
