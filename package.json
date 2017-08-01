@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "example": "gojs .",
-    "build": "gojs -b examples/index.js && git checkout gh-pages && npm run deploy",
-    "deploy": "cp -rf .dist/ ."
+    "ghpages": "gojs -b examples/index.js && git checkout gh-pages && cp -rf .dist/ .",
   },
   "keywords": [],
   "author": "moyuyc",
