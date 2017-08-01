@@ -250,8 +250,8 @@ export default class extends Component {
                               {}, labelProps, dataProps
                           )}>
                         {sumVal}
-                        {this.renderTileList(value, sumVal, idx)}
                     </span>
+                    {this.renderTileList(value, sumVal, idx)}
                     <span
                         className="x-axis"
                         {..._.merge({}, xAxisProps, xProps)}
@@ -323,7 +323,7 @@ export default class extends Component {
                     && rectProps.style.backgroundColor
         label = label || (typeof xAxis[i] === 'object' ? xAxis[i].value : xAxis[i])
         return (
-            <div className="chart-popover-item" key={i}>
+            <div className="chart-popover-item" key={j}>
                 <span className="chart-popover-color" style={{backgroundColor: clr}}/>
                 <span className="chart-popover-label" >{label}</span>
                 <span className="chart-popover-value" >{value}</span>

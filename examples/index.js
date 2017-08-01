@@ -25,11 +25,18 @@ class ExampleApp extends React.Component {
         const style = {
             border: '1px solid #ddd',
             marginTop: 10,
-            marginBottom: 10
+            marginBottom: 10,
+            borderRadius: 10,
+            padding: '5 12 12 12',
+        }
+        const smStyle = {
+            fontSize: 15,
+            color: 'brown',
+            marginLeft: 10,
         }
         return (
             <div style={style}>
-                <h3>{title} <small>{subtitle}</small></h3>
+                <h3 style={{marginLeft: 10}}>{title} <small style={smStyle}>{subtitle}</small></h3>
                 <Comp/>
             </div>
         )
