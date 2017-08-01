@@ -8,12 +8,12 @@ import TileHistogram from './Histogram/Tile'
 const data = [
     {
         title: 'Histogram',
-        subtitle: 'Normal',
+        subtitle: '<Normal>',
         Comp: NormalHistogram
     },
     {
         title: 'Histogram',
-        subtitle: 'Tile',
+        subtitle: '<Tile>',
         Comp: TileHistogram
     }
 ]
