@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "example": "gojs .",
-    "ghpages": "gojs -b examples/index.js && git checkout gh-pages && cp -rf .dist/ . && git commit -am gh-pages; git push origin gh-pages"
+    "ghpages": "gojs -b examples/index.js && git checkout gh-pages && cp -rf .dist/ . && git commit -am gh-pages; git push origin gh-pages && git checkout master"
   },
   "keywords": [],
   "author": "moyuyc",
