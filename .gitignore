@@ -1,4 +1,6 @@
+.dist/
 .idea/
+.happypack/
 node_modules/
 npm-debug.log
 
