@@ -13,7 +13,7 @@ import _ from 'lodash'
 
 
 @sua(style)
-export default class extends Component {
+export default class Histogram extends Component {
 
     /*static propsTypes = {
         xAxis: PropTypes.arrayOf(
@@ -173,7 +173,9 @@ export default class extends Component {
             } else {
                 if (Array.isArray(obj)) {
                     val = obj.reduce((a, b) => a + b.value, 0)
-                    obj.value = obj
+                    obj = {
+                        value: obj
+                    }
                 } else {
                     val = obj.value
                 }
@@ -215,12 +217,14 @@ export default class extends Component {
             }]
         }
         const sumVal = value.reduce((a, b) => a + b.value, 0)
+
         const computedProps = _.merge({}, rectProps, props, {
             style: {
                 ...(color ? {backgroundColor: color} : {}),
                 height: (animate && !isMount) ? 0 : ((sumVal / max) * 100) + '%'
             }
         })
+        
         const margeGap = this.margeGap
         xAxis[idx] = typeof xAxis[idx] === 'object' ? xAxis[idx] : {value: xAxis[idx]}
         const {
@@ -228,11 +232,11 @@ export default class extends Component {
             ...xProps
         } = xAxis[idx]
 
-        const {
+        let {
             value: dataVal,
             ...dataProps
         } = data[idx]
-
+        dataProps = !_.isArray(data[idx]) ? dataProps : null
         return (
             <div
                 className="rectangle-container"
@@ -247,7 +251,7 @@ export default class extends Component {
                 <div className="rectangle" {...computedProps}>
                     <span className="rectangle-text"
                           {..._.merge(
-                              {}, labelProps, dataProps
+                              {}, labelProps, !_.isArray(dataProps) && dataProps
                           )}>
                         {sumVal}
                     </span>

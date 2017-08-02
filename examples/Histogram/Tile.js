@@ -5,7 +5,7 @@
 import React from 'react'
 import Histogram from '../../Chart/Histogram/'
 
-export default class extends React.Component {
+export default class TileHistogram extends React.Component {
     render() {
         return (
             <Histogram
