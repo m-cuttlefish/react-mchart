@@ -3,12 +3,15 @@
  * @author yucong02
  */
 import React from 'react'
+import {debug} from 'react-mhoc'
 import Histogram from '../../Chart/Histogram/'
+
+let CHistogram = debug({infoDown: true})(Histogram)
 
 export default class TileHistogram extends React.Component {
     render() {
         return (
-            <Histogram
+            <CHistogram
                 xAxis={[
                     {
                         value: '百度',

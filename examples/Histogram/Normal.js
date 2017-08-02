@@ -4,11 +4,14 @@
  */
 import React from 'react'
 import Histogram from '../../Chart/Histogram/'
+import {debug} from 'react-mhoc'
+
+let CHistogram = debug({infoDown: true})(Histogram)
 
 export default class NormalHistogram extends React.Component {
     render() {
         return (
-            <Histogram
+            <CHistogram
                 xAxis={[
                     {
                         value: '百度',

@@ -1,24 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {debug} from 'react-mhoc'
 
 import NormalHistogram from './Histogram/Normal'
 import TileHistogram from './Histogram/Tile'
-
-const cDebug = debug({infoDown: true})
-let CNormalHistogram = cDebug(NormalHistogram)
-let CTileHistogram = cDebug(TileHistogram)
 
 const data = [
     {
         title: 'Histogram',
         subtitle: '<Normal>',
-        Comp: CNormalHistogram
+        Comp: NormalHistogram
     },
     {
         title: 'Histogram',
         subtitle: '<Tile>',
-        Comp: CTileHistogram
+        Comp: TileHistogram
     }
 ]
 
