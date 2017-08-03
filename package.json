@@ -2,11 +2,12 @@
   "name": "react-mchart",
   "version": "1.0.3",
   "description": "",
-  "main": "index.js",
+  "main": "index.es5.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "example": "gojs .",
-    "ghpages": "gojs -b examples/index.js && git checkout gh-pages && cp -rf .dist/ . && git commit -am gh-pages; git push origin gh-pages && git checkout master"
+    "ghpages": "gojs -b examples/index.js && git checkout gh-pages && cp -rf .dist/ . && git commit -am gh-pages; git push origin gh-pages && git checkout master",
+    "pack": "babel index.js -o index.es5.js && babel Chart -D -d es5"
   },
   "keywords": [],
   "author": "moyuyc",
