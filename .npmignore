@@ -1,9 +1,11 @@
 .dist/
 .idea/
 .happypack/
+
 Chart/
 index.js
 node_modules/
+
 npm-debug.log
 
 # Windows image file caches
@@ -53,5 +55,3 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
-!index.es5.js
-!es5/

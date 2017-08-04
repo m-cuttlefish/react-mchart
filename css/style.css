@@ -1,0 +1,160 @@
+.chart-tile-histogram .main {
+  text-align: center;
+  height: calc(100% - 25px );
+  border-bottom: 1px solid #f2f2f2;
+}
+.chart-tile-histogram .main .rectangle-container {
+  display: inline-block;
+  height: 100%;
+  vertical-align: bottom;
+  margin: auto 10px;
+  position: relative;
+}
+.chart-tile-histogram .main .rectangle-container .x-axis {
+  text-align: center;
+  display: block;
+  position: absolute;
+  left: -100px;
+  right: -100px;
+  bottom: -25px;
+}
+.chart-tile-histogram .main .rectangle-container .rectangle {
+  height: 0;
+  transition: height .5s ease;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  vertical-align: bottom;
+}
+.chart-tile-histogram .main .rectangle-container .rectangle .rectangle-text {
+  position: absolute;
+  text-align: center;
+  top: -21px;
+  left: -100px;
+  right: -100px;
+  display: block;
+}
+.chart-tile-histogram .main .rectangle-container .rectangle .tile-container {
+  height: 100%;
+  position: relative;
+}
+.chart-popover {
+  pointer-events: none;
+  padding: 12px 15px;
+  color: #fff;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+}
+.chart-popover .chart-popover-item {
+  display: block;
+  margin-bottom: 10px;
+  min-width: 100px;
+  text-align: left;
+  line-height: 15px;
+}
+.chart-popover .chart-popover-item .chart-popover-color {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+}
+.chart-popover .chart-popover-item .chart-popover-label {
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+.chart-popover .chart-popover-item .chart-popover-value {
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+}
+.chart-popover .chart-popover-item:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+.chart-popover .chart-popover-item:last-child {
+  margin-bottom: 0;
+}
+.chart-tile-histogram .main {
+  text-align: center;
+  height: calc(100% - 25px );
+  border-bottom: 1px solid #f2f2f2;
+}
+.chart-tile-histogram .main .rectangle-container {
+  display: inline-block;
+  height: 100%;
+  vertical-align: bottom;
+  margin: auto 10px;
+  position: relative;
+}
+.chart-tile-histogram .main .rectangle-container .x-axis {
+  text-align: center;
+  display: block;
+  position: absolute;
+  left: -100px;
+  right: -100px;
+  bottom: -25px;
+}
+.chart-tile-histogram .main .rectangle-container .rectangle {
+  height: 0;
+  transition: height .5s ease;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  vertical-align: bottom;
+}
+.chart-tile-histogram .main .rectangle-container .rectangle .rectangle-text {
+  position: absolute;
+  text-align: center;
+  top: -21px;
+  left: -100px;
+  right: -100px;
+  display: block;
+}
+.chart-tile-histogram .main .rectangle-container .rectangle .tile-container {
+  height: 100%;
+  position: relative;
+}
+.chart-popover {
+  pointer-events: none;
+  padding: 12px 15px;
+  color: #fff;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+}
+.chart-popover .chart-popover-item {
+  display: block;
+  margin-bottom: 10px;
+  min-width: 100px;
+  text-align: left;
+  line-height: 15px;
+}
+.chart-popover .chart-popover-item .chart-popover-color {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+}
+.chart-popover .chart-popover-item .chart-popover-label {
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+.chart-popover .chart-popover-item .chart-popover-value {
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+}
+.chart-popover .chart-popover-item:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+.chart-popover .chart-popover-item:last-child {
+  margin-bottom: 0;
+}
