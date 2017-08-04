@@ -4,7 +4,7 @@
  */
 import React from 'react'
 import {debug} from 'react-mhoc'
-import Histogram from '../../Chart/Histogram/'
+import Histogram from '../../es5/Histogram/'
 
 let CHistogram = debug({infoDown: true})(Histogram)
 

@@ -5,14 +5,14 @@
 
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
-import sua from 'react-mhoc/lib/style-useable'
+// import sua from 'react-mhoc/lib/style-useable'
 import c from 'classname'
-import style from './component.less'
+// import style from './component.less'
 import _ from 'lodash'
 // import PropTypes from 'prop-types'
 
 
-@sua(style)
+// @sua(style)
 export default class Histogram extends Component {
 
     /*static propsTypes = {

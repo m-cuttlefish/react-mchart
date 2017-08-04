@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom'
 import NormalHistogram from './Histogram/Normal'
 import TileHistogram from './Histogram/Tile'
 
+import '../css/style.css'
+
 const data = [
     {
         title: 'Histogram',
